@@ -1,10 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
     tools:context=".ResumoActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESUMO DE ESTUDOS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#902774"
+        android:layout_margin="30dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Insira sua disciplina"
+        app:hintTextColor="#800E3E"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="50"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtAtividade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintTextColor="@color/black"
+        android:hint="Insira sua Atividade"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="16"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtHorasEstudadas"
+        android:layout_width="match_parent"
+        app:hintTextColor="#E91E63"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Insira suas Horas Estudadas">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:maxLength="16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVoltarMenuCadastro"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="0dp"
+        android:text="Novo Cadastro"
+        android:textSize="18sp"
+        android:backgroundTint="#D7257C"
+        android:layout_margin="25dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVoltarMenuResumo"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="0dp"
+        android:backgroundTint="#7C1649"
+        android:text="Voltar ao Menu"
+        android:textSize="18sp"
+        />
+</LinearLayout><?xml version="1.0" encoding="utf-8"?>
