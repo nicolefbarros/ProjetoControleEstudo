@@ -1,10 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AjudaActivity">
+    android:layout_margin="20dp"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ResumoActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AJUDA"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#242"
+        android:layout_margin="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/borda"
+        >
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:text="1. Cadastre seus estudos
+            \n\n2. Consulte registros
+            \n\n3. Visualize estastisticas
+            \n\n4. Atualize seu Perfil"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVoltarMenuResumo"
+        android:layout_marginTop="50dp"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="0dp"
+        android:backgroundTint="#242"
+        android:text="Voltar ao Menu"
+        android:textSize="18sp" />
+</LinearLayout><?xml version="1.0" encoding="utf-8"?>

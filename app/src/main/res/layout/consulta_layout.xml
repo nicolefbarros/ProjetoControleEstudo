@@ -64,7 +64,7 @@
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:orientation="vertical"
-
+        android:background="@drawable/borda"
         >
 
     <TextView
@@ -72,6 +72,9 @@
         android:layout_height="wrap_content"
         android:text="Matemática \nExercícios de equação \nHoras: 2"
         android:textSize="17dp"
+        android:layout_margin="10dp">
+
+    </TextView>
 
 
 
@@ -80,13 +83,14 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnVoltarMenuResumo"
+        android:id="@+id/btnVoltarMenuConsulta"
         android:layout_width="500dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         app:cornerRadius="0dp"
-        android:backgroundTint="#7C1649"
+        android:backgroundTint="#B62626"
         android:text="Voltar ao Menu"
         android:textSize="18sp"
+        android:layout_marginTop="20dp"
         />
 </LinearLayout><?xml version="1.0" encoding="utf-8"?>
